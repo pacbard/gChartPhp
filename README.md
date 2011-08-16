@@ -18,15 +18,13 @@ Pie Chart Example
 pie chart using the gPieChart class.
 
 code:
-<code>
-	{{{
+`	{{{
 	$piChart = new gPieChart();
 	$piChart->addDataSet(array(112,315,66,40));
 	$piChart->setLabels = array("first", "second", "third","fourth");
 	$piChart->setLegend(array("first", "second", "third","fourth"));
 	$piChart->setColors = array("ff3344", "11ff11", "22aacc", "3333aa");
-	}}}
-</code>
+	}}}`
 
 Notes
 -----

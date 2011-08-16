@@ -1,4 +1,5 @@
-﻿## gChartPhp
+﻿# gChartPhp
+
 ### PHP Object wrapper for the Google Chart API
 
 A simple PHP Object wrapper for the <a href="http://code.google.com/apis/chart/image_charts.html">Google Chart API</a>. Should help anyone who needs to automate the building of the Google Chart url. Supports (almost) all types of charts. 
@@ -14,13 +15,13 @@ Pie chart using the gPieChart class.
 
 code:
 `
-    {{{
-    $piChart = new gPieChart();
-    $piChart->addDataSet(array(112,315,66,40));
-    $piChart->setLabels = array("first", "second", "third","fourth");
-    $piChart->setLegend(array("first", "second", "third","fourth"));
-    $piChart->setColors = array("ff3344", "11ff11", "22aacc", "3333aa");
-    }}}
+     {{{
+     $piChart = new gPieChart();
+     $piChart->addDataSet(array(112,315,66,40));
+     $piChart->setLabels = array("first", "second", "third","fourth");
+     $piChart->setLegend(array("first", "second", "third","fourth"));
+     $piChart->setColors = array("ff3344", "11ff11", "22aacc", "3333aa");
+     }}}
 `
 
 ### Notes

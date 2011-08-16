@@ -20,3 +20,5 @@ Notes
 -----
  * The verion that was first committed to GUTHub is the same that is on Google Code.  Future commits will be reserved to GITHub.
  * I am pleased with how the code is shaping up. I haven't had much of an opportunity in the past to play with inheritence and polymorphism in PHP.
+=======
+This fork divides the main wrapper in single class files.  I think it follows the PEAR specifications.

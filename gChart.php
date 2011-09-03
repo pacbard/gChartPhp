@@ -289,6 +289,7 @@ class gChart
                 {
                     $toEncode=(int)$array/$rate;
                     $s='';
+                    $encodedData2 = array();
                     for ($i=0;$i<2;++$i)
                     {
                         $m = $toEncode%64;

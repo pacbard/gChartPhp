@@ -1,4 +1,4 @@
-﻿PHP Object wrapper for the Google Chart API
+PHP Object wrapper for the Google Chart API
 ===========================================
 A simple PHP Object wrapper for the <a href="http://code.google.com/apis/chart/image_charts.html">Google Chart API</a>. Should help anyone who needs to automate the building of the Google Chart url. Supports (almost) all types of charts. 
 Prerequisites
@@ -23,4 +23,5 @@ Notes
 
 Change Log
 ----------
+20110903 - Fixed encodeData2 bug in gChart.php
 20110816 - PEAR branch merged in master.  Legacy branch created with the old files

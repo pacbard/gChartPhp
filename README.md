@@ -1,9 +1,17 @@
-﻿PHP Object wrapper for the Google Chart API
+PHP Object wrapper for the Google Chart API
 ===========================================
 A simple PHP Object wrapper for the <a href="http://code.google.com/apis/chart/image_charts.html">Google Chart API</a>. Should help anyone who needs to automate the building of the Google Chart url. Supports (almost) all types of charts. 
 Prerequisites
 -------------
 To use this API, you should have a little PHP experience; a little patience to read the documentation; and a little persistence to keep trying if your first charts don't look as you expect them to.
+
+Project migration
+-----------------
+This project was migrated from a Google Code project.
+This project will continue to be mirrored on its <a href="http://code.google.com/p/gchartphp/">Google Code page</a>.
+
+Use the master branch for stable release, the experimental branch for the development release, and the legacy branch for the old release of the wrapper (this branch will not be actively updated).
+
 Pie Chart Example
 -----------------
 <img src="http://chart.apis.google.com/chart?cht=p&chs=350x200&chd=t:112,315,66,40&chdl=first|second|third|fourth&chco=ff3344,11ff11,22aacc,3333aa&chl=first|second|third|fourth&image.png"/> 
@@ -23,4 +31,5 @@ Notes
 
 Change Log
 ----------
+20110903 - Fixed encodeData2 bug in gChart.php
 20110816 - PEAR branch merged in master.  Legacy branch created with the old files

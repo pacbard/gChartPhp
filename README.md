@@ -10,7 +10,7 @@ Project migration
 This project was migrated from a Google Code project.
 This project will continue to be mirrored on its <a href="http://code.google.com/p/gchartphp/">Google Code page</a>.
 
-Use the master branch for stable releases, the experimental branch for the development release, and the legacy branch for the old release of the wrapper (this branch will not be actively updated).
+Use the master branch for stable release, the experimental branch for the development release, and the legacy branch for the old release of the wrapper (this branch will not be actively updated).
 
 Pie Chart Example
 -----------------

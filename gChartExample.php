@@ -1,4 +1,5 @@
 <?php
+namespace gchart;
 ini_set('display_errors','1');
 ?>
 <html>
@@ -14,7 +15,7 @@ img { display:block; }
 <h1>Quick examples.</h1>
 
 <?php
-require ('gChart.php');
+require ('gChartInit.php');
 ?>
 <h2>Pie Chart</h2>
 <?php

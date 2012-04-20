@@ -11,6 +11,6 @@
         }
     ],
     "autoload": {
-        "psr-0": {"gchart": "/"}
+        "psr-0": {"gchart": ""}
     }
 }

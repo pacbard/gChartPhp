@@ -11,4 +11,4 @@
 $gChartClassRoot = dirname(__FILE__);
 require_once($gChartClassRoot. '/ClassLoader.php');
 
-gChart_ClassLoader::register($gChartClassRoot);
+gchart\ClassLoader::register($gChartClassRoot);

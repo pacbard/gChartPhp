@@ -10,7 +10,4 @@
             "homepage": "https://github.com/pacbard"
         }
     ],
-    "autoload": {
-        "psr-0": {"gchart": ""}
-    }
 }

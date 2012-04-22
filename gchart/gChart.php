@@ -621,11 +621,11 @@ class gChart
     /**
      * @brief Specifies solid or dotted grid lines on your chart
      *
-     * @param $xAxisStepSize Ingeger Used to calculate how many x grid lines to show on the chart.
+     * @param $xAxisStepSize Integer Used to calculate how many x grid lines to show on the chart.
      *                               100 / step_size = how many grid lines on the chart.
      * @param $yAxisStepSize Integer Used to calculate how many x or y grid lines to show on the chart.
      *                               100 / step_size = how many grid lines on the chart.
-     * @param $dashLength Integerthe Length of each line dash, in pixels. By default it is 4
+     * @param $dashLength Integer the Length of each line dash, in pixels. By default it is 4
      * @param $spaceLength Integer The spacing between dashes, in pixels. Specify 0 for for a solid line.
      *                             By default it is 1
      * @param $xOffset Integer The number of units, according to the chart scale, to offset the x grid line.

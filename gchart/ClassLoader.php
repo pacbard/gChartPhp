@@ -1,11 +1,12 @@
 <?php
+namespace gchart;
 
 /**
  * SPL class loader for gChart classes.
  * Code taken from Pheanstalk https://github.com/pda/pheanstalk/blob/master/classes/Pheanstalk/ClassLoader.php and modified
  *
  */
-class gChart_ClassLoader
+class ClassLoader
 {
   const PACKAGE = 'gchart';
 

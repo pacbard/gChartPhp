@@ -15,7 +15,7 @@ img { display:block; }
 <h1>Quick examples.</h1>
 
 <?php
-require ('gChartInit.php');
+require_once(__DIR__ . "/gchart/gChartInit.php");
 ?>
 <h2>Pie Chart</h2>
 <?php

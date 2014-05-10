@@ -254,28 +254,40 @@ class gChart
         return $encodedData;
     }
     /**
-     * @brief Encodes the data as    /**
      * @brief Specifies the style of an axis.
      *
      * @param $axisIndex Integer This is a zero-based index into the axis array specified by setVisibleAxes
-     * @param $axisStyle #FIXME
+     * @param $axisStyle String You can specify the font size, color, and alignment for axis labels, both custom labels and 
+     *                   default label values. All labels on the same axis have the same format. If you have multiple 
+     *                   copies of an axis, you can format each one differently. You can also specify the format of a 
+     *                   label string, for example to show currency symbols or trailing zeroes.
+     *                   By default, the top and bottom axes do not show tick marks by the values, while the left and 
+     *                   right axes do show them.
+     *
+     *                   Refer to official documentation at: 
+     *                   http://code.google.com/apis/chart/image/docs/gallery/bar_charts.html#axis_labels
      */
     public function addAxisStyle($axisIndex, $axisStyle)
     {
         $this->setProperty('chxs', $axisIndex.','.$this->encodeData($axisStyle, '|'), true);
     }
-
     /**
      * @brief Specifies the style of an axis.
      *
      * @param $axisIndex Integer This is a zero-based index into the axis array specified by setVisibleAxes
-     * @param $axisTickLength #FIXME
+     * @param $axisTickLength Integer You can specify long tick marks for specific axes. Typically this is 
+     *                        used to extend a tick mark across the length of a chart. Use the addAxisStyle() 
+     *                        method to change the tick mark color.
+     *
+     *                        Refer to official documentation at: 
+     *                        http://code.google.com/apis/chart/image/docs/gallery/bar_charts.html#axis_labels
      */
     public function addAxisTickMarkStyle($axisIndex, $axisTickLength)
     {
         $this->setProperty('chxtc', $axisIndex.','.$this->encodeData($axisTickLength, '|'), true);
     }
-     Extended Text.
+     /* 
+     * Extended Text.
      *
      * This specifies integer values from 0-4095, inclusive, encoded by two alphanumeric characters.
      *
@@ -563,39 +575,6 @@ class gChart
     public function addAxisLabelPositions($axisIndex, $labelPositions)
     {
         $this->setProperty('chxp', $axisIndex.','.$this->encodeData($labelPositions, ','), true);
-    }
-    /**
-     * @brief Specifies the style of an axis.
-     *
-     * @param $axisIndex Integer This is a zero-based index into the axis array specified by setVisibleAxes
-     * @param $axisStyle String You can specify the font size, color, and alignment for axis labels, both custom labels and 
-     *                   default label values. All labels on the same axis have the same format. If you have multiple 
-     *                   copies of an axis, you can format each one differently. You can also specify the format of a 
-     *                   label string, for example to show currency symbols or trailing zeroes.
-     *                   By default, the top and bottom axes do not show tick marks by the values, while the left and 
-     *                   right axes do show them.
-     *
-     *                   Refer to official documentation at: 
-     *                   http://code.google.com/apis/chart/image/docs/gallery/bar_charts.html#axis_labels
-     */
-    public function addAxisStyle($axisIndex, $axisStyle)
-    {
-        $this->setProperty('chxs', $axisIndex.','.$this->encodeData($axisStyle, '|'), true);
-    }
-    /**
-     * @brief Specifies the style of an axis.
-     *
-     * @param $axisIndex Integer This is a zero-based index into the axis array specified by setVisibleAxes
-     * @param $axisTickLength Integer You can specify long tick marks for specific axes. Typically this is 
-     *                        used to extend a tick mark across the length of a chart. Use the addAxisStyle() 
-     *                        method to change the tick mark color.
-     *
-     *                        Refer to official documentation at: 
-     *                        http://code.google.com/apis/chart/image/docs/gallery/bar_charts.html#axis_labels
-     */
-    public function addAxisTickMarkStyle($axisIndex, $axisTickLength)
-    {
-        $this->setProperty('chxtc', $axisIndex.','.$this->encodeData($axisTickLength, '|'), true);
     }
     /**
      * @brief Specifies the data range.

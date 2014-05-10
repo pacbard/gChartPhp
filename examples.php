@@ -1,6 +1,6 @@
 <?php
 namespace gchart;
-ini_set('display_errors','1');
+#ini_set('display_errors','1');
 ?>
 <html>
 <head>
@@ -285,6 +285,31 @@ $barChart->groupSpacerWidth = 10;
 <code>
 $barChart->setHorizontal(true);<br>
 $barChart->groupSpacerWidth = 10;
+</code>
+</p>
+<h2>Funnel Bar Chart</h2>
+<?php
+$funnelChart = new gFunnelChart(800,230);
+$funnelChart->addData(array(100, 75, 44, 42, 29, 3));
+$funnelChart->setColors(array("ffffff", "FF9900"));
+$funnelChart->setVisibleAxes(array('x','y'));
+$funnelChart->addAxisRange(0, 0, 100, 10);
+$funnelChart->addAxisLabel(0, array("0%", "10%", "20%", "30%","40%", "50%", "60%", "70%","80%", "90%", "100%"));
+$funnelChart->addAxisLabel(1, array("Step6", "Step5", "Step4", "Step3", "Step2", "Step1"));
+$funnelChart->addValueMarkers('N%2a%2a%','000000',1,-1,11,'','c');
+?>
+<img src="<?php print $funnelChart->getUrl();  ?>" /> <br> stacked bar chart using the gStackedBarChart class.
+<p>
+<em>code:</em><br>
+<code>
+$funnelChart = new gFunnelChart(800,230);<br>
+$funnelChart->addData(array(100, 75, 44, 42, 29, 3));<br>
+$funnelChart->setColors(array("ffffff", "FF9900"));<br>
+$funnelChart->setVisibleAxes(array('x','y'));<br>
+$funnelChart->addAxisRange(0, 0, 100, 10);<br>
+$funnelChart->addAxisLabel(0, array("0%", "10%", "20%", "30%","40%", "50%", "60%", "70%","80%", "90%", "100%"));<br>
+$funnelChart->addAxisLabel(1, array("Step6", "Step5", "Step4", "Step3", "Step2", "Step1"));<br>
+$funnelChart->addValueMarkers('N%2a%2a%','000000',1,-1,11,'','c');<br>
 </code>
 </p>
 <h2>Venn Diagram</h2>

@@ -1,6 +1,6 @@
 PHP Object wrapper for the Google Chart API
 ===========================================
-A simple PHP Object wrapper for the <a href="http://code.google.com/apis/chart/image_charts.html">Google Chart API</a>. Should help anyone who needs to automate the building of the Google Chart url. Supports (almost) all types of charts. 
+A simple PHP Object wrapper for the <a href="https://developers.google.com/chart/">Google Chart API</a>. Should help anyone who needs to automate the building of the Google Chart url. Supports (almost) all types of charts. 
 Prerequisites
 -------------
 To use this API, you should have a little PHP experience; a little patience to read the documentation; and a little persistence to keep trying if your first charts don't look as you expect them to.

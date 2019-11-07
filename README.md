@@ -1,6 +1,11 @@
-*FORK* PHP Object wrapper for the ~Google Chart~ [Image-Charts](https://www.image-charts.com) API
+> Google Image Charts API is **deprecated in 2012** and was **turned off on March 18, 2019**. This fork use [Image-Charts.com](https://www.image-charts.com) API instead.
+
+
+PHP Object wrapper for the ~Google Chart~ [Image-Charts](https://www.image-charts.com) API
 ===========================================
-A simple PHP Object wrapper for the [Image-Charts API](https://www.image-charts.com) (a drop-in-replacement and backward compatible chart API with [Google Image-Charts](http://code.google.com/apis/chart/image_charts.html)). Should help anyone who needs to automate the building of the Google Chart url. Supports (almost) all types of charts.
+
+A simple PHP Object wrapper for the [Image-Charts API](https://www.image-charts.com) (a drop-in-replacement and backward compatible chart API with [Google Image-Charts](http://code.google.com/apis/chart/image_charts.html)). Should help anyone who needs to automate the building of the Chart url. Supports (almost) all types of charts.
+
 Prerequisites
 -------------
 To use this API, you should have a little PHP experience; a little patience to read the documentation; and a little persistence to keep trying if your first charts don't look as you expect them to.
